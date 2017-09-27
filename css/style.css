@@ -1,0 +1,107 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 1px solid black;
+}
+body{
+background-color: white;
+display:block;
+}
+/* can I move the floats from h1 and nav both into header?
+-first attempt produced negative results*/
+header{
+/*header background color not working*/
+  background-color: purple;
+}
+
+h1{
+  background-color: teal;
+  display:inline-block;
+  color: white;
+  float:left;
+  padding: 5px;
+}
+
+nav{
+  float:right;
+}
+
+
+li{
+  display: inline;
+  color: #777777;
+  margin: 10px;
+}
+
+
+main{
+background-color: tan;
+height: 250px;
+position: absolute;
+width:90%;
+}
+
+footer{
+background-color: darkgrey;
+border-top: 5px red solid;
+clear: both;
+}
+
+h5{
+  color:white;
+  text-align:center;
+}
+
+
+.tealText{
+  color:teal;
+}
+
+.contactImageFormat{
+  width: 30px;
+  height: 30px;
+}
+
+.portfolioImageFormat{
+  width: 60px;
+  height: 60px;
+}
+.imageSize{
+  height:50px;
+  width: 50px;
+}
+
+#mainSectionLeft{
+float:left;
+Position: relative;
+left:30px;
+  width: 30%;
+  height: 200px;
+}
+
+#mainSectionRight{
+  float:right;
+  position: relative;
+  width: 50%;
+  height: 200px;
+}
+
+.clear{
+  clear:both;
+}
+
+.clearfix: :after{
+content:”.”;
+display: block;
+clear: both;
+}
