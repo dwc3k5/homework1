@@ -2,29 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" text="css" href="css/style.css">
     <title>
       contact
     </title>
   </head>
   <body>
-    <header><!-- Your Name -->
-      <h1>Your Name</h1>
-      <nav>
+    <header>
+      <!-- Your Name -->
+      <h1 id="mainTitle">Your Name</h1>
+      <nav id="pageNav">
         <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a>Contact</a></li>
+          <!--links are smaller than the perceived button. Add actual buttons-->
+          <li class="btn btn-primary"><a href="index.html">About</a></li>
+          <li class="btn btn-primary"><a href="portfolio.html">Portfolio</a></li>
+          <li class="btn btn-primary"><a>Contact</a></li>
         </ul>
       </nav>
-
     </header>
-    <!-- the 4 <br>s are needed to get "about me" and "portrait"
-    to go down. Need a cleaner way to make this break-->
-    <br><br><br><br>
 
-    <main><!-- About me & connect with me -->
-      <section>
+    <main class="aboutMe clearfix"><!-- About me & connect with me -->
+      <section id="mainSectionLeft">
         <h2>Contact</h2>
         <form>
           <h4>Name</h4>
@@ -37,9 +36,9 @@
         </form>
       </section>
 
-      <section>
+      <section id="mainSectionRight">
         <h3>Connect With Me</h3>
-        <nav>
+        <nav id="contactLinks">
           <ul>
             <li><a href="#"><img class="imageSize" src="images/megaman.jpg" about="Github"></a></li>
             <li><a href="#"><img class="imageSize" src="images/pikachu.jpg" about="Linkedin"></a><img></li>
@@ -50,7 +49,6 @@
     </main>
 
     <footer><!-- copyright-->
-      <border></border>
       <h5>@ Copyright 2017 David Cox</h5>
     </footer>
   </body>

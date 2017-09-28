@@ -1,4 +1,12 @@
-html, body, div, span, applet, object, iframe,
+/*TABLE OF CONTENTS*/
+/*SECTION 0: black border visual*/
+/*SECTION 1: elements throughout the entire page*/
+/*SECTION 2: elements found in the header <page>*/
+/*SECTION 3: elements found in the <main>*/
+/*SECTION 4: elements found in the <footer>*/
+
+/*---------- SECTION 0: black border test ----------*/
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -12,30 +20,13 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   border: 1px solid black;
-}
-body{
-background-color: white;
-display:block;
-}
-/* can I move the floats from h1 and nav both into header?
--first attempt produced negative results*/
-header{
-/*header background color not working*/
-  background-color: purple;
-}
+}*/
 
-h1{
-  background-color: teal;
-  display:inline-block;
-  color: white;
-  float:left;
-  padding: 5px;
-}
 
+/*----------SECTION 1: style for entire page----------*/
 nav{
-  float:right;
+  padding: 10px;
 }
-
 
 li{
   display: inline;
@@ -43,65 +34,129 @@ li{
   margin: 10px;
 }
 
-
-main{
-background-color: tan;
-height: 250px;
-position: absolute;
-width:90%;
-}
-
-footer{
-background-color: darkgrey;
-border-top: 5px red solid;
-clear: both;
-}
-
-h5{
-  color:white;
-  text-align:center;
-}
-
-
-.tealText{
-  color:teal;
-}
-
-.contactImageFormat{
-  width: 30px;
-  height: 30px;
-}
-
-.portfolioImageFormat{
-  width: 60px;
-  height: 60px;
-}
 .imageSize{
   height:50px;
   width: 50px;
 }
 
-#mainSectionLeft{
-float:left;
-Position: relative;
-left:30px;
-  width: 30%;
+/*.clear{
+  clear:both;
+}*/
+
+.clearfix::after{
+content: ””;
+display: block;
+clear: both;
+}
+.btn{
+  background-color: #4aaaa5;
+}
+/*---------- SECTION 2 style for <header> ----------*/
+header{
+  background-color: #ffffff;
+  height: 100px;
+  border-bottom: 3px solid black;
+  margin: 0 20px;
+}
+
+h1{
+background-color: #4aaaa5;
+display: inline-block;
+color: white;
+margin: auto;
+padding: 20px;
+font-size: 48px;
+}
+
+#mainTitle{
+  margin: 0 30px;
+}
+
+#pageNav{
+  margin: 20px 60px 0px 0px;
+  padding:20px;
+  font-size:22px;
+  float: right;
+}
+
+/*---------- SECTION 3 style for <main> ----------*/
+h2, h3{
+  text-align: center;
+  margin: 5px auto 5px auto;
+  color:#4aaaa5;
+  border-bottom: 3px solid #4aaaa5;
+}
+
+h2{
+  font-size: 36px;
+}
+
+h3{
+  padding:10px 0 0 0;
+}
+p{
+  font-size: 24px;
+}
+
+.aboutMe{
+  width: 960px;
+  background-image: url(../images/ep_naturalwhite/ep_naturalwhite.png);
+  padding: 10px;
+  margin: 20px auto 0 auto;
+}
+
+.portraitImageFormat{
+  width: 175px;
   height: 200px;
+  margin-right: 20px;
+  float:left;
+}
+
+.contactImageFormat{
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+#mainSectionLeft{
+  width: 50%;
+  height: 80%;
+  margin: 0;
+  float:left;
 }
 
 #mainSectionRight{
-  float:right;
-  position: relative;
-  width: 50%;
-  height: 200px;
+  width: 300px;
+  height: 60%;
+  /*margin: 0 0 100px 0;*/
+  float: right;
 }
 
-.clear{
-  clear:both;
+#contactLinks{
+  margin: 10px 0 0 0;
 }
 
-.clearfix: :after{
-content:”.”;
+.imageContainer{
+  overflow:none;
+  height: 100%;
+  width: 100%;
+
+}
+/*---------- SECTION 4 style for <footer> ----------*/
+footer{
+position:fixed;
+height: 80px;
+bottom: 0;
+width: 90%;
+margin: 0 5% 0 5%;
+background-color: #666666;
+border-top: 10px #4aaaa5 solid;
+/*clear: both;*/
 display: block;
-clear: both;
+}
+
+h5{
+  color:white;
+  margin: 25px auto;
+  text-align: center;
 }
