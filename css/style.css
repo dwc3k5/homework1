@@ -1,11 +1,15 @@
 /*TABLE OF CONTENTS*/
-/*SECTION 0: black border visual*/
-/*SECTION 1: elements throughout the entire page*/
-/*SECTION 2: elements found in the header <page>*/
-/*SECTION 3: elements found in the <main>*/
-/*SECTION 4: elements found in the <footer>*/
+/*---------SECTION 0: border and test element---*/
+/*---------SECTION 1 universal------------------*/
+/*---------SECTION 2: <header>------------------*/
+/*---------SECTION 3.0 <main>-------------------*/
+/*---------SECTION 3.1 index<main>--------------*/
+/*---------SECTION 3.2 contact<main>------------*/
+/*---------SECTION 3.3 portfolio<main>----------*/
+/*---------SECTION 4: <footer>------------------*/
+/*---------SECTION 5: Graceful Decline----------*/
 
-/*---------- SECTION 0: black border test ----------*/
+/*---------SECTION 0: border and test element---*/
 /*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,9 +25,30 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   border: 1px solid black;
 }*/
+/*
+.testLogos{
+  width: 100%;
+   height: 55%;
+   float: right;
+   display:inline;
+   overflow:hidden;
+}
 
+.testSocial{
+size: 100%;
+}
 
-/*----------SECTION 1: style for entire page----------*/
+.testThree{
+
+}
+
+*/
+.floatLeft{
+  float:left
+}
+
+/*---------SECTION 1 universal ------------------*/
+
 nav{
   padding: 10px;
 }
@@ -34,24 +59,19 @@ li{
   margin: 10px;
 }
 
-.imageSize{
-  height:50px;
-  width: 50px;
-}
-
-/*.clear{
-  clear:both;
-}*/
-
 .clearfix::after{
 content: ””;
 display: block;
 clear: both;
 }
+
 .btn{
   background-color: #4aaaa5;
 }
-/*---------- SECTION 2 style for <header> ----------*/
+
+
+
+/*---------SECTION 2: <header> ------------------*/
 header{
   background-color: #ffffff;
   height: 100px;
@@ -79,7 +99,14 @@ font-size: 48px;
   float: right;
 }
 
-/*---------- SECTION 3 style for <main> ----------*/
+/*--------- SECTION 3.0 <main> ------------------*/
+main{
+  margin: auto;
+  width: 960px;
+  background-image: url(../images/ep_naturalwhite/ep_naturalwhite.png);
+  padding: 10px;
+}
+
 h2, h3{
   text-align: center;
   margin: 5px auto 5px auto;
@@ -94,22 +121,9 @@ h2{
 h3{
   padding:10px 0 0 0;
 }
+
 p{
   font-size: 24px;
-}
-
-.aboutMe{
-  width: 960px;
-  background-image: url(../images/ep_naturalwhite/ep_naturalwhite.png);
-  padding: 10px;
-  margin: 20px auto 0 auto;
-}
-
-.portraitImageFormat{
-  width: 175px;
-  height: 200px;
-  margin-right: 20px;
-  float:left;
 }
 
 .contactImageFormat{
@@ -118,30 +132,90 @@ p{
   margin-right: 20px;
 }
 
+.imageContainer{
+  overflow:none;
+  height: 100%;
+  width: 100%;
+}
+
+.imageSize{
+  height: 50px;
+  width: 50px;
+}
+
 #mainSectionLeft{
   width: 50%;
   height: 80%;
   margin: 0;
   float:left;
+  background: white;
+  border-radius: 5px;
+  padding: 2%;
 }
 
 #mainSectionRight{
-  width: 300px;
+  width: 35%;
   height: 60%;
   /*margin: 0 0 100px 0;*/
   float: right;
+  background: white;
+  border-radius: 5px;
+  padding: 0 2%;
+  margin: 5% 5% 0 0;
 }
 
-#contactLinks{
-  margin: 10px 0 0 0;
+/*--------- SECTION 3.1 index<main> -------------*/
+.portraitImageFormat{
+  width: 175px;
+  height: 200px;
+  margin-right: 20px;
+  float:left;
+  border-radius: 5px;
+}
+/*--------- SECTION 3.2 contact<main> -----------*/
+
+.inputFormat{
+  width:90%;
 }
 
-.imageContainer{
-  overflow:none;
+#messageFormat{
+  height: 200px;
+}
+
+/*--------- SECTION 3.3 portfolio<main> ---------*/
+
+.portImageSize{
   height: 100%;
   width: 100%;
-
+  margin: 2%;
+  border: 3px solid blue;
+  border-radius: 5px;
 }
+
+.portImageSizeTest{
+background-image:url();
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+
+.portfolioContainer{
+  width: 30%;
+  height:20%;
+  position:relative;
+  float: left;
+  margin: 5%;
+}
+
+.buttonFormat{
+  position:absolute;
+  width: 100%;
+  bottom: 50%;
+  left: 0;
+}
+
 /*---------- SECTION 4 style for <footer> ----------*/
 footer{
 position:fixed;
